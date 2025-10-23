@@ -12,7 +12,6 @@ class GettextLegacy < Formula
   mirror "http://ftp.gnu.org/gnu/gettext/gettext-0.25.1.tar.gz"
   sha256 "746f955d42d71eb69ce763869cb92682f09a4066528d018b6ca7a3f48089a085"
   license "GPL-3.0-or-later"
-  version "0.25.1"
   bottle do
     sha256 arm64_sequoia: "740b5076c4bcbf2caa40018a9ae18750a23495b9aad8ca82314004be3dad9faf"
     sha256 arm64_sonoma:  "80a935b81e6d1e562c6b7570d05361e62e800402b0d982438d9aa3d492575543"
