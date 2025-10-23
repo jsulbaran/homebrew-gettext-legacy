@@ -61,7 +61,9 @@ class GettextLegacy < Formula
     else
       "--with-libxml2-prefix=#{Formula["libxml2"].opt_prefix}"
     end
-
+    
+    ENV.append "CFLAGS", "-Wno-incompatible-function-pointer-types"
+    ENV.append "CFLAGS", "-Wno-error=incompatible-function-pointer-types"
     system "./configure", *std_configure_args, *args
     system "make"
     ENV.deparallelize # install doesn't support multiple make jobs
